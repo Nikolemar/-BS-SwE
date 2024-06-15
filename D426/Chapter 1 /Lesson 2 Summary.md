@@ -40,4 +40,24 @@ The SQL language is divided into five sublanguages:
 - Data Control Language (DCL) controls database user access.
 - Data Transaction Language (DTL) manages database transactions.
 
-## 2.3 Managing databases
+## 2.3 Unsigned Attributes
+
+-Attribute Signed Unsigned
+-Value Range Negative and Positive Only Non-negative
+1 Byte (TINYINT) -128 to 127 0 to 255
+2 Bytes (SMALLINT) -32,768 to 32,767 0 to 65,535
+4 Bytes (INT) -2,147,483,648 to 2,147,483,647 0 to 4,294,967,295
+8 Bytes (BIGINT) -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 0 to 18,446,744,073,709,551,615
+
+### Order of Precedence
+
+| Precedence | Operators                                 |
+|------------|-------------------------------------------|
+| 1          | - (unary)                                 |
+| 2          | ^                                         |
+| 3          | * / %                                     |
+| 4          | + - (binary)                              |
+| 5          | = != < > <= >=                            |
+| 6          | NOT                                       |
+| 7          | AND                                       |
+| 8          | OR                                        |
